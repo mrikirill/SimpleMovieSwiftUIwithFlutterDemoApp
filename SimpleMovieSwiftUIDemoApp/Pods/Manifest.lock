@@ -1,0 +1,28 @@
+PODS:
+  - Flutter (1.0.0)
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
+  - movie_detail_flutter (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `../movie_detail_flutter/.ios/Flutter/engine`)
+  - FlutterPluginRegistrant (from `../movie_detail_flutter/.ios/Flutter/FlutterPluginRegistrant`)
+  - movie_detail_flutter (from `../movie_detail_flutter/.ios/Flutter`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: "../movie_detail_flutter/.ios/Flutter/engine"
+  FlutterPluginRegistrant:
+    :path: "../movie_detail_flutter/.ios/Flutter/FlutterPluginRegistrant"
+  movie_detail_flutter:
+    :path: "../movie_detail_flutter/.ios/Flutter"
+
+SPEC CHECKSUMS:
+  Flutter: bdfa2e8fe0e2880a2c6a58a0b1a8675c262a07af
+  FlutterPluginRegistrant: d3a0fbc12bc47787a12fcc919193f3959aa7d5ad
+  movie_detail_flutter: c10e1b94171f79a75f3fc554371458edf0967772
+
+PODFILE CHECKSUM: 55b56aa95c762d4dd2f27834dc1bf599f6228991
+
+COCOAPODS: 1.11.3
