@@ -26,6 +26,7 @@ final class FlowCoordinator: ObservableObject {
     func showDetailMovieFlutter(movieId: Int, title: String) {
         let flutterViewController = FlutterViewController(
               project: nil, initialRoute: "/detail?movieId=\(movieId)&title=\(title)", nibName: nil, bundle: nil)
-        window.rootViewController?.present(flutterViewController, animated: true, completion: nil)
+        let navigationController = window.rootViewController as? UINavigationController
+        navigationController?.pushViewController(flutterViewController, animated: true)
     }
 }

@@ -11,11 +11,16 @@ class MovieDetailScreen extends StatelessWidget {
 
   @override
   Widget build(context) => Scaffold(
-      appBar: AppBar(title: Text(Get.parameters["title"] ?? "Movie")),
-      body: Obx(
+          //appBar: AppBar(title: Text(Get.parameters["title"] ?? "Movie")),
+          body: Obx(
         () => ListView(
-          padding: const EdgeInsets.all(15),
+          padding: const EdgeInsets.fromLTRB(15, 100, 15, 0),
           children: [
+            Center(
+              child: Text("Hi I'm Flutter Screen",
+                  style: TextStyle(fontSize: 20.0)),
+            ),
+            Divider(),
             for (var movie in viewModel.movies) MovieDetaiItem(movie: movie)
           ],
         ),
